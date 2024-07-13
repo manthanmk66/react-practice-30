@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const Eleven = () => {
   const quotedata = [
-    "sffea","faeffea","fqaff","ffef"
+    "sffea","faeffea","fqaff","ffef",
   ];
 
   const random = Math.floor(Math.random() * quotedata.length);
