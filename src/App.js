@@ -12,6 +12,7 @@ import Ten from "./components/Ten";
 import Eleven from "./components/eleven";
 import Tweleve from "./components/Tweleve";
 import Thirteen from "./components/Thirteen";
+import Fifteen from "./components/Fifteen";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
       {/* <Ten />
       <Eleven/> */}
       {/* <Tweleve /> */}
-      <Thirteen/>
+      {/* <Thirteen/> */}
+      <Fifteen/>
     </div>
   );
 }
