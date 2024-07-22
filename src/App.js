@@ -13,8 +13,16 @@ import Eleven from "./components/eleven";
 import Tweleve from "./components/Tweleve";
 import Thirteen from "./components/Thirteen";
 import Fifteen from "./components/Fifteen";
+import Sixteen from "./components/Sixteen";
 
 function App() {
+  const items = [
+    "Item 1",
+    "Item 2",
+    "Item 3",
+    "Another Item",
+    "Another Item 2",
+  ];
   return (
     <div className="App">
       {/* <One />
@@ -29,7 +37,8 @@ function App() {
       <Eleven/> */}
       {/* <Tweleve /> */}
       {/* <Thirteen/> */}
-      <Fifteen/>
+      {/* <Fifteen/> */}
+      <Sixteen items={items} itemsPerPage={2} />
     </div>
   );
 }
