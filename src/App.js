@@ -14,15 +14,21 @@ import Tweleve from "./components/Tweleve";
 import Thirteen from "./components/Thirteen";
 import Fifteen from "./components/Fifteen";
 import Sixteen from "./components/Sixteen";
-
+import Sevnteen from "./components/Seventeen";
+import Eighteen from "./components/Eighteen";
+import Nineteen from "./components/Nineteen";
+import NineteenComp from "./components/TwentyComp";
+import Twenty from "./components/Twenty";
+import TwentyComp from "./components/TwentyComp";
+import { ThemeProvider } from "./components/ThemeContext";
 function App() {
-  const items = [
-    "Item 1",
-    "Item 2",
-    "Item 3",
-    "Another Item",
-    "Another Item 2",
-  ];
+  // const items = [
+  //   "Item 1",
+  //   "Item 2",
+  //   "Item 3",
+  //   "Another Item",
+  //   "Another Item 2",
+  // ];
   return (
     <div className="App">
       {/* <One />
@@ -38,7 +44,15 @@ function App() {
       {/* <Tweleve /> */}
       {/* <Thirteen/> */}
       {/* <Fifteen/> */}
-      <Sixteen items={items} itemsPerPage={2} />
+      {/* <Sixteen items={items} /> */}
+      {/* <Sevnteen items={items} itemsPerPage={2} /> */}
+      {/* <Eighteen/> */}
+      <ThemeProvider>
+        <div>
+          <Twenty />
+          <TwentyComp />
+        </div>
+      </ThemeProvider>
     </div>
   );
 }

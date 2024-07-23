@@ -1,29 +1,23 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
-export default function Sixteen({ items, itemsPerPage }) {
-  const [currentPage, setCurrentPage] = useState(1);
+export default function Fifteen({items}) {
 
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = items.slice(indexOfFirstItem, indexOfLastItem);
+    const [searchTerm,setSearchTerm] = useState('');
 
-  const pageNumbers = [];
-  for (let i = 1; i <= Math.ceil(items.length / itemsPerPage); i++) {
-    pageNumbers.push(i);
-  }
+    const filteredItems = items.filter((item) => 
+    item.toLowerCase().includes(searchTerm.toLowerCase())
+    )
 
   return (
     <div>
+      <input type='text' placeholder='Search...' onChange={(e)=> setSearchTerm(e.target.value)}/>
       <ul>
-        {currentItems.map((item, index) => {
-          return <li key={index}>{item}</li>;
-        })}
+        {filteredItems.map((item,index) => (
+            <li key={index}>
+                {item}
+            </li>
+        ))}
       </ul>
-      {pageNumbers.map((number) => (
-        <li key={number} onClick={() => setCurrentPage(number)}>
-          {number}
-        </li>
-      ))}
     </div>
-  );
+  )
 }
