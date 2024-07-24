@@ -21,6 +21,8 @@ import NineteenComp from "./components/TwentyComp";
 import Twenty from "./components/Twenty";
 import TwentyComp from "./components/TwentyComp";
 import { ThemeProvider } from "./components/ThemeContext";
+import TwentyOne from "./components/TwentyOne";
+import { CartProvider } from "./components/CartContext";
 function App() {
   // const items = [
   //   "Item 1",
@@ -47,12 +49,15 @@ function App() {
       {/* <Sixteen items={items} /> */}
       {/* <Sevnteen items={items} itemsPerPage={2} /> */}
       {/* <Eighteen/> */}
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <div>
           <Twenty />
           <TwentyComp />
         </div>
-      </ThemeProvider>
+      </ThemeProvider> */}
+      <CartProvider>
+        <TwentyOne />
+      </CartProvider>
     </div>
   );
 }
