@@ -23,6 +23,8 @@ import TwentyComp from "./components/TwentyComp";
 import { ThemeProvider } from "./components/ThemeContext";
 import TwentyOne from "./components/TwentyOne";
 import { CartProvider } from "./components/CartContext";
+import TwentyTwo from "./components/TwentyTwo";
+import TwentyThree from "./components/TwentyThree";
 function App() {
   // const items = [
   //   "Item 1",
@@ -55,9 +57,11 @@ function App() {
           <TwentyComp />
         </div>
       </ThemeProvider> */}
-      <CartProvider>
+      {/* <CartProvider>
         <TwentyOne />
-      </CartProvider>
+      </CartProvider> */}
+      {/* <TwentyTwo /> */}
+      <TwentyThree />
     </div>
   );
 }
