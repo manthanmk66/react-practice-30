@@ -25,6 +25,9 @@ import TwentyOne from "./components/TwentyOne";
 import { CartProvider } from "./components/CartContext";
 import TwentyTwo from "./components/TwentyTwo";
 import TwentyThree from "./components/TwentyThree";
+import TwentyFour from "./components/TwentyFour";
+import { AuthProvider } from "./components/AuthContext";
+import TwentyFive from "./components/TwentyFive";
 function App() {
   // const items = [
   //   "Item 1",
@@ -61,7 +64,11 @@ function App() {
         <TwentyOne />
       </CartProvider> */}
       {/* <TwentyTwo /> */}
-      <TwentyThree />
+      {/* <TwentyThree /> */}
+      {/* <TwentyFour /> */}
+      <AuthProvider>
+        <TwentyFive />
+      </AuthProvider>
     </div>
   );
 }
