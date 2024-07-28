@@ -28,6 +28,14 @@ import TwentyThree from "./components/TwentyThree";
 import TwentyFour from "./components/TwentyFour";
 import { AuthProvider } from "./components/AuthContext";
 import TwentyFive from "./components/TwentyFive";
+import TwentySix from "./components/TwentySix";
+import TwentySeven from "./components/TwentySeven";
+import { LocalizationProvider } from "./components/LocalizationContext";
+import TwentyEight from "./components/TwentyEight";
+
+import TwentyNine from "./components/TwentyNine";
+import Thirty from "./components/Thirty";
+import ThirtyOne from "./components/ThirtyOne";
 function App() {
   // const items = [
   //   "Item 1",
@@ -66,9 +74,17 @@ function App() {
       {/* <TwentyTwo /> */}
       {/* <TwentyThree /> */}
       {/* <TwentyFour /> */}
-      <AuthProvider>
+      {/* <AuthProvider>
         <TwentyFive />
-      </AuthProvider>
+      </AuthProvider> */}
+      {/* <TwentySix /> */}
+      {/* <LocalizationProvider>
+        <TwentySeven />
+      </LocalizationProvider> */}
+      {/* <TwentyEight/> */}
+      {/* <TwentyNine /> */}
+      {/* <Thirty /> */}
+      <ThirtyOne />
     </div>
   );
 }
